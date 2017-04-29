@@ -6,10 +6,22 @@ import Home from './Home.js';
 import Header from './Header.js';
 import AlbumOne from './AlbumOne.js';
 import PhotoOne from './PhotoOne.js';
+import Hero from './Hero';
 
 class App extends Component {
 
+constructor (){
+  super();
+  this.state = {
+
+  }
+}
+
+
   render() {
+    var cat = {
+        album0: [ 'Photo Album','Album One', 'Album Two', 'Album Three', 'Album Four', 'Album Five', 'Album Six' ]
+    };
     return (
       <Router>
         <div>

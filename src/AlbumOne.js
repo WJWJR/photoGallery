@@ -1,27 +1,24 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import Hero from './Hero';
 
 class AlbumOne extends Component {
 
   render() {
+    console.log(this.props);
     return(
       <div className="App">
-        <div className="App-header">
-          <h1>Album One</h1>
-        </div>
+        <Hero />
         <div className="container ">
 
           <div className="row">
 
             <div className="col s3 aside">
               <aside>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/AlbumOne">Album One</Link></li>
-                <li><Link to="/AlbumTwo">Album Two</Link></li>
-                <li><Link to="/AlbumThree">Album Three</Link></li>
-                <li><Link to="/AlbumFour">Album Four</Link></li>
-                <li><Link to="/AlbumFive">Album Five</Link></li>
-                <li><Link to="/AlbumSix">Album Six</Link></li>
+                <ul>
+
+                </ul>
+
               </aside>
             </div>
 

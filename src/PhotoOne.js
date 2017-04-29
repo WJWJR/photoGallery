@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import Hero from './Hero';
 
 class PhotoOne extends Component {
 
@@ -8,9 +9,7 @@ class PhotoOne extends Component {
 
       <div className="App">
 
-        <div className="App-header">
-          <h1>Photo One</h1>
-        </div>
+        <Hero/>
 
         <div className="container ">
 
@@ -24,7 +23,7 @@ class PhotoOne extends Component {
                             <span className="card-title"></span>
                           </div>
 
-                      
+
 
             </div> {/*End card*/}
 
