@@ -19,7 +19,7 @@ class PhotoOne extends Component {
 
 
                           <div className="card-image">
-                            <img src="/blah.png"/>
+                            <img className="responsive-img" alt="#" width="650" src="./images/dorin-vancea.jpg"/>
                             <span className="card-title"></span>
                           </div>
 

@@ -4,6 +4,13 @@ import Hero from './Hero';
 
 class AlbumOne extends Component {
 
+  constructor(){
+    super();
+    this.state = {
+      photos:['aaron-burden.jpg', 'dorin-vancea.jpg', 'lemuel-butler.jpg']
+    }
+  }
+
   render() {
     console.log(this.props);
     return(
@@ -16,7 +23,12 @@ class AlbumOne extends Component {
             <div className="col s3 aside">
               <aside>
                 <ul>
-
+                  <li><Link to="/AlbumOne">Album One</Link></li>
+                  <li><Link to="/AlbumTwo">Album Two</Link></li>
+                  <li><Link to="/AlbumThree">Album Three</Link></li>
+                  <li><Link to="/AlbumFour">Album Four</Link></li>
+                  <li><Link to="/AlbumFive">Album FIve</Link></li>
+                  <li><Link to="/AlbumSix">Album Six</Link></li>
                 </ul>
 
               </aside>
@@ -29,7 +41,7 @@ class AlbumOne extends Component {
                 <div className="col s4">
                   <div className="card">
                     <div className="card-image">
-                      <img src="/blah.png"/>
+                      <img className="responsive-img" alt="#" width="500" src="./images/aaron-burden.jpg"/>
                       <span className="card-title"></span>
                     </div>
                     <div className="card-action">
@@ -41,7 +53,7 @@ class AlbumOne extends Component {
                 <div className="col s4">
                   <div className="card">
                     <div className="card-image">
-                      <img src="/blah.png"/>
+                      <img className="responsive-img" alt="#" width="500" src="./images/lemuel-butler.jpg"/>
                       <span className="card-title"></span>
                     </div>
                     <div className="card-action">
@@ -53,7 +65,7 @@ class AlbumOne extends Component {
                 <div className="col s4">
                   <div className="card">
                     <div className="card-image">
-                      <img src="/blah.png"/>
+                      <img className="responsive-img" alt="#" width="500" src="./images/dorin-vancea.jpg"/>
                       <span className="card-title"></span>
                     </div>
                     <div className="card-action">
@@ -68,7 +80,7 @@ class AlbumOne extends Component {
               <div className="col s4">
                 <div className="card">
                   <div className="card-image">
-                    <img src="/blah.png"/>
+                    <img className="responsive-img" alt="#" width="500" src="./images/lemuel-butler.jpg"/>
                     <span className="card-title"></span>
                   </div>
                   <div className="card-action">
@@ -80,7 +92,7 @@ class AlbumOne extends Component {
               <div className="col s4">
                 <div className="card">
                   <div className="card-image">
-                    <img src="/blah.png"/>
+                    <img className="responsive-img" alt="#" width="500" src="./images/dorin-vancea.jpg"/>
                     <span className="card-title"></span>
                   </div>
                   <div className="card-action">
@@ -92,7 +104,7 @@ class AlbumOne extends Component {
               <div className="col s4">
                 <div className="card">
                   <div className="card-image">
-                    <img src="/blah.png"/>
+                    <img className="responsive-img" alt="#" width="500" src="./images/aaron-burden.jpg"/>
                     <span className="card-title"></span>
                   </div>
                   <div className="card-action">

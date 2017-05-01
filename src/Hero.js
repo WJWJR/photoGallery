@@ -2,15 +2,31 @@ import React, { Component } from 'react';
 
 class Hero extends Component {
 
-  render() {
+// constructor(props){
+//   super(props);
+//   this.state = {
+//     title: ["Photo Album", "Album One", "Photo One"]
+//   }
+// }
+
+
+  render(props) {
+    console.log(this.props);
     return(
 
         <div className="App-header">
-          {this.props.cat.album0.map((album) => <h1>{album}</h1>)}
-          <h1>Photo Albums</h1>
+
+          <h1>{this.props.title}</h1>
+
         </div>
     )
   }
+}
+Hero.propTypes = {
+  title: React.PropTypes.array,
+};
+Hero.defaultProps = {
+  title: "Photo Album"
 }
 
 export default Hero;

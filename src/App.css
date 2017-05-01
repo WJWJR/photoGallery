@@ -35,3 +35,7 @@ aside {
     left: -36%;
     top: 0.5rem;
 }
+
+img {
+  width:100%;
+}
